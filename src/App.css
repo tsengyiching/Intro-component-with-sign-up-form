@@ -14,7 +14,7 @@ body,
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: url(./components/images/bg-intro-mobile.png) var(--Red);
-  height: 150vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -64,7 +64,7 @@ p {
 .sign-in {
   height: 440px;
   background-color: white;
-  margin: 10px 25px 0px 25px;
+  margin: 10px 25px 60px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,4 +106,79 @@ input::placeholder {
 
 .terms strong {
   color: var(--Red);
+}
+
+@media screen and (min-width: 500px) {
+  body,
+  .App {
+    background: url(./components/images/bg-intro-desktop.png) var(--Red);
+  }
+
+  .main {
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 620px;
+    width: 1160px;
+    position: absolute;
+    left: 140px;
+    top: 100px;
+  }
+
+  h1,
+  p,
+  .banner,
+  .sign-in {
+    width: 500px;
+    margin: 0px 20px 0px 20px;
+    padding: 0;
+  }
+
+  h1 {
+    margin-top: 190px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: left;
+    line-height: 50px;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 190px;
+  }
+
+  .banner {
+    margin-bottom: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner,
+  .sign-in {
+    width: 550px;
+  }
+
+  .sign-in {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  input {
+    width: 450px;
+    height: 60px;
+  }
+
+  #fname {
+    margin-top: 40px;
+  }
+
+  .terms {
+    width: 450px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
